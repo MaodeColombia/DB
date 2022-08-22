@@ -7,3 +7,8 @@ LECTURA RECOMENDADA:
 InnoDB y MyISAM: El ying yang de MySQL ☯🐬
 https://platzi.com/tutoriales/1272-sql-mysql/4484-innodb-y-myisam-el-ying-yang-de-mysql/
 */
+
+CREATE DATABASE plataform_operation;
+-- Comando CREATE, como su nombre lo dice crea, en este caso combinado con el comando DATABASE crea una base de datos, entonces en el servidor local se crea una DB con nombre "plataform_operation", se puede comprobar con el comando SHOW DATABASES;
+SHOW DATABASES;
+-- https://github.com/MaodeColombia/DB/blob/main/extra/image/20220821223041.png
