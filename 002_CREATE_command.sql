@@ -26,3 +26,13 @@ SELECT DATABASE(); -- para conocer a dónde está el puntero
 USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 --NOTE: notese que que el nombre de la DB cuando se creó "plataform_operation" fue con letras minusculas y aquí cuando se uso el nombre de la DB se uso con mayuscula sostenida, con esto se quiere dar a entender que MySQL "No es sensible a mayúsculas/minúsculas"
 -- https://github.com/MaodeColombia/DB/blob/main/extra/image/20220821225851.png
+
+
+CREATE TABLE books (
+    
+);
+/*
+NOTE: una buena práctica de Bases de Datos es:
+- El sustantivo en plural
+- El sustantivo en ingles
+*/
