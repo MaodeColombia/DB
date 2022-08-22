@@ -28,8 +28,8 @@ USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 -- https://github.com/MaodeColombia/DB/blob/main/extra/image/20220821225851.png
 
 
-CREATE TABLE books (
-    
+CREATE TABLE books IF NOT EXISTS(
+
 );
 /*
 NOTE: una buena práctica de Bases de Datos es:
