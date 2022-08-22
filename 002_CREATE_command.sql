@@ -29,9 +29,22 @@ USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 
 
 CREATE TABLE books IF NOT EXISTS(
-
+    book_id INTEGER UNSIGNED PRIMARY AUTO_INCREMENT, 
 );
 /*
+INTEGER         tipo entero
+UNSIGNED        entero sin signo
+PRIMARY         llave primaria de la tabla
+AUTO_INCREMENT  llave autoincremental
+https://github.com/MaodeColombia/DB/blob/main/extra/image/20220822004247.png
+
+se tiene que UNSIGNED describe a INTEGER como tambien AUTO_INCREMENT describe a PRIMARY
+    https://github.com/MaodeColombia/DB/blob/main/extra/image/20220822004847.png
+    https://github.com/MaodeColombia/DB/blob/main/extra/image/20220822005047.png
+
+eventualmente se podría dejar que el INTEGER sea positivo y negativo
+    https://github.com/MaodeColombia/DB/blob/main/extra/image/20220822005347.png
+
 NOTE: una buena práctica de Bases de Datos es:
 - El sustantivo en plural
 - El sustantivo en ingles
