@@ -32,6 +32,7 @@ CREATE TABLE books IF NOT EXISTS(
     book_id INTEGER UNSIGNED PRIMARY AUTO_INCREMENT,
     author ,
     title VARCHAR(100) NOT NULL,
+    year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
 
 );
 /*
@@ -65,4 +66,7 @@ AUTO_INCREMENT:
 
 NOT NULL
     SQL no permite que esté vacio este dato, a sea que SQL no genera el registro cuando no se registre información en este campo
+
+DEFAULT
+    SQL de manera predeterminada rellena este dato con la información que se registre delante del comando DEFAULT
 */
