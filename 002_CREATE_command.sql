@@ -33,7 +33,8 @@ CREATE TABLE books IF NOT EXISTS(
     author ,
     title VARCHAR(100) NOT NULL,
     year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
-    language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language'
+    language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
+    cover_url VARCHAR(500),
 
 );
 /*
@@ -73,4 +74,6 @@ DEFAULT
 
 COMMENT
     Agrea un comentario al campo, esto solo lo ve el desarrollador de la Base de Datos.
+
+Cuando se requiera hacer uso de imagenes, nunca se almacenan en esta area, se agrega la url de la imagen.
 */
