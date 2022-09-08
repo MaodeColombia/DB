@@ -33,6 +33,7 @@ CREATE TABLE books IF NOT EXISTS(
     author ,
     title VARCHAR(100) NOT NULL,
     year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
+    language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language'
 
 );
 /*
@@ -69,4 +70,7 @@ NOT NULL
 
 DEFAULT
     SQL de manera predeterminada rellena este dato con la información que se registre delante del comando DEFAULT
+
+COMMENT
+    Agrea un comentario al campo, esto solo lo ve el desarrollador de la Base de Datos.
 */
