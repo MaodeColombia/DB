@@ -29,7 +29,10 @@ USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 
 
 CREATE TABLE books IF NOT EXISTS(
-    book_id INTEGER UNSIGNED PRIMARY AUTO_INCREMENT, 
+    book_id INTEGER UNSIGNED PRIMARY AUTO_INCREMENT,
+    author ,
+    title VARCHAR(100) NOT NULL,
+
 );
 /*
 INTEGER         tipo entero
@@ -59,4 +62,7 @@ NOTE:
 /*
 AUTO_INCREMENT:
     Esta opción incrementa de uno en uno el número de registro, independientemente de los registros que por alguna razón se hayan borrado; el número más grande de este campo no representa la cantidad de registros que tiene la tabla
+
+NOT NULL
+    SQL no permite que esté vacio este dato, a sea que SQL no genera el registro cuando no se registre información en este campo
 */
