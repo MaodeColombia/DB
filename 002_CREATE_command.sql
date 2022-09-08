@@ -35,6 +35,7 @@ CREATE TABLE books IF NOT EXISTS(
     year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
     language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
     cover_url VARCHAR(500),
+    price DOUBLE(6,2) NOT NULL DEFAULT 10.0,
 
 );
 /*
@@ -76,4 +77,7 @@ COMMENT
     Agrea un comentario al campo, esto solo lo ve el desarrollador de la Base de Datos.
 
 Cuando se requiera hacer uso de imagenes, nunca se almacenan en esta area, se agrega la url de la imagen.
+
+DOUBLE
+    Este atributo se usa para poder usar números con decimales, en el caso del ejemplo sedefine el uso de hasta 6 cifras para la parte entera y 2 cifras para la parte decimal.
 */
