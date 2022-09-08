@@ -49,3 +49,9 @@ NOTE: una buena práctica de Bases de Datos es:
 - El sustantivo en plural
 - El sustantivo en ingles
 */
+
+/*
+NOTE:
+    TODA TABLA SIN EXCEPCION ALGUNA DEBE TENER UN "ID"
+    con el ID se identifica de manera única cualquier tupla en una tabla
+*/
