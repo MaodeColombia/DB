@@ -55,3 +55,8 @@ NOTE:
     TODA TABLA SIN EXCEPCION ALGUNA DEBE TENER UN "ID"
     con el ID se identifica de manera única cualquier tupla en una tabla
 */
+
+/*
+AUTO_INCREMENT:
+    Esta opción incrementa de uno en uno el número de registro, independientemente de los registros que por alguna razón se hayan borrado; el número más grande de este campo no representa la cantidad de registros que tiene la tabla
+*/
