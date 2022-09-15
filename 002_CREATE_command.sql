@@ -94,3 +94,11 @@ TEXT
     https://desarrolloweb.com/articulos/1054.php#cadena
     https://www.tutorialesprogramacionya.com/mysqlya/temarios/descripcion.php?inicio=42&cod=78&punto=59
 */
+
+/*
+OBSERVACIONES FINALES
+    1. A pesar que en el lenguaje SQL es insensible a mayúsculas/minúsculas, una buena práctica de programación es escribir en MAYÚSCULA SOSTENIDA todas las palabras reservadas del SQL y el resto como nombre de campos, de tablas, de bases de datos escribir en minúscula sostenida. 
+    2.
+    3. Curso completo de MySQL en YouTube
+    https://youtube.com/playlist?list=PLIygiKpYTC_4KmkW7AKH87nDWtb29jHvN
+*/
