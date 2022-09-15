@@ -29,15 +29,15 @@ USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 
 
 CREATE TABLE books IF NOT EXISTS(
-    book_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    author ,
+    `book_id` INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    `author` INTEGER UNSIGNED,
     title VARCHAR(100) NOT NULL,
     `year` INTEGER UNSIGNED NOT NULL DEFAULT 1900,
-    language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
-    cover_url VARCHAR(500),
+    `language` VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
+    `cover_url` VARCHAR(500),
     price DOUBLE(6,2) NOT NULL DEFAULT 10.0,
-    sellable TINYINT(1) DEFAULT 1,
-    description TEXT
+    `sellable` TINYINT(1) DEFAULT 1,
+    `description` TEXT
 );
 /*
 INTEGER         tipo entero
