@@ -32,7 +32,7 @@ CREATE TABLE books IF NOT EXISTS(
     book_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     author ,
     title VARCHAR(100) NOT NULL,
-    year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
+    `year` INTEGER UNSIGNED NOT NULL DEFAULT 1900,
     language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
     cover_url VARCHAR(500),
     price DOUBLE(6,2) NOT NULL DEFAULT 10.0,
@@ -98,7 +98,7 @@ TEXT
 /*
 OBSERVACIONES FINALES
     1. A pesar que en el lenguaje SQL es insensible a mayúsculas/minúsculas, una buena práctica de programación es escribir en MAYÚSCULA SOSTENIDA todas las palabras reservadas del SQL y el resto como nombre de campos, de tablas, de bases de datos escribir en minúscula sostenida. 
-    2.
+    2. también es una buena práctica definir explicitamente nombres de los campo con el acento grave `, su ASCII es alt+96 (no acento agudo ´ alt+239); no debería pasar nunca, que se use una palabra reservada de SQL como nombre de cualquier objeto, como por ejemplo year YEAR
     3. Curso completo de MySQL en YouTube
     https://youtube.com/playlist?list=PLIygiKpYTC_4KmkW7AKH87nDWtb29jHvN
 */
