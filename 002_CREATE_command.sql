@@ -1,4 +1,4 @@
--- como se se ha estado usando la CL - Linea de Comandos, un comando que es util se este que sirve para borrar la pantalla
+-- como se se ha estado usando la CL - Linea de Comandos, un comando que es util se este que sirve para borrar la pantalla en windows
 system cls; 
 -- https://github.com/MaodeColombia/DB/blob/main/extra/image/20220821221621.png
 
@@ -29,7 +29,7 @@ USE PLATAFORM_OPERATION; -- se mueve el puntero a la DB que se acaba de crear
 
 
 CREATE TABLE books IF NOT EXISTS(
-    book_id INTEGER UNSIGNED PRIMARY AUTO_INCREMENT,
+    book_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     author ,
     title VARCHAR(100) NOT NULL,
     year INTEGER UNSIGNED NOT NULL DEFAULT 1900,
