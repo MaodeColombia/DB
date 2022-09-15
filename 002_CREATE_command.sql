@@ -37,8 +37,7 @@ CREATE TABLE books IF NOT EXISTS(
     cover_url VARCHAR(500),
     price DOUBLE(6,2) NOT NULL DEFAULT 10.0,
     sellable TINYINT(1) DEFAULT 1,
-
-
+    description TEXT
 );
 /*
 INTEGER         tipo entero
@@ -90,4 +89,8 @@ TINYINT
     "TINYINT(1) es sinónimos de bool o boolean, un valor cero se considera falso, los valores distintos de cero, verdadero."
     https://dev.mysql.com/doc/refman/8.0/en/other-vendor-data-types.html
     
+TEXT
+    Tiene una longitud de 65535 caracteres.
+    https://desarrolloweb.com/articulos/1054.php#cadena
+    https://www.tutorialesprogramacionya.com/mysqlya/temarios/descripcion.php?inicio=42&cod=78&punto=59
 */
