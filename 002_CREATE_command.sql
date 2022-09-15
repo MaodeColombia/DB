@@ -36,6 +36,8 @@ CREATE TABLE books IF NOT EXISTS(
     language VARCHAR(2) NOT NULL DEFAULT 'es' COMMENT 'ISO 639-1 Language',
     cover_url VARCHAR(500),
     price DOUBLE(6,2) NOT NULL DEFAULT 10.0,
+    sellable TINYINT(1) DEFAULT 1,
+
 
 );
 /*
@@ -80,4 +82,12 @@ Cuando se requiera hacer uso de imagenes, nunca se almacenan en esta area, se ag
 
 DOUBLE
     Este atributo se usa para poder usar números con decimales, en el caso del ejemplo sedefine el uso de hasta 6 cifras para la parte entera y 2 cifras para la parte decimal.
+
+TINYINT
+    Es un tipo de entero que puede ir de 0 a 255 cuando se usa como Unsigned o va de -128 a 127
+    https://dev.mysql.com/doc/refman/8.0/en/integer-types.html
+
+    "TINYINT(1) es sinónimos de bool o boolean, un valor cero se considera falso, los valores distintos de cero, verdadero."
+    https://dev.mysql.com/doc/refman/8.0/en/other-vendor-data-types.html
+    
 */
