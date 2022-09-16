@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS books(
     `cover_url` VARCHAR(500),
     `price` DOUBLE(6,2) NOT NULL DEFAULT 10.0,
     `sellable` TINYINT(1) DEFAULT 1,
+    `copies` INTEGER NOT NULL DEFAULT 1,
     `description` TEXT
 );
 /*
@@ -109,3 +110,43 @@ CREATE TABLE IF NOT EXISTS authors(
     `name` VARCHAR(100) NOT NULL,
     `nationality` VARCHAR(3)
 );
+
+/*
+Proporciona información sobre las columnas de una tabla, DESCRIBE es un sinónimo para SHOW COLUMNS FROM
+https://conclase.net/mysql/curso/sqlsen/DESCRIBE 
+*/
+DESCRIBE authors;
+DESCRIBE books;
+SHOW FULL COLUMNS FROM books;
+
+
+ALTER TABLE books ADD `copies` INTEGER NOT NULL DEFAULT 1 AFTER `sellable`
+
+
+CREATE TABLE clients (
+    `client_id` INTEGER  UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(100) NOT NULL UNIQUE,
+    `birthday` DATETIME,
+    `gender` ENUM('M','F','ND'),
+    `active` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO authors (author_id,name,nationality) VALUES ('','Juan Rulfo','MEX');
+
+INSERT INTO authors (name,nationality) VALUES ('Gabriel García Márquez','COL');
+
+INSERT INTO authors VALUES ('','Juan Gabriel Vásquez','COL')
+
+/*todo en un solo comando*/
+INSERT INTO authors (name,nationality)
+VALUES ('Julio Cortázar','ARG'),
+('Isabel Allende','CHI'),
+('Octavio Paz','MEX'),
+('Juan Carlos Onetti','URU');
+
+
+delete from authors;
+SELECT * FROM authors;
