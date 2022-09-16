@@ -102,3 +102,10 @@ OBSERVACIONES FINALES
     3. Curso completo de MySQL en YouTube
     https://youtube.com/playlist?list=PLIygiKpYTC_4KmkW7AKH87nDWtb29jHvN
 */
+
+
+CREATE TABLE IF NOT EXISTS authors(
+    `author_id` INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `nationality` VARCHAR(3)
+);
