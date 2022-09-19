@@ -164,7 +164,27 @@ SHOW FULL COLUMNS FROM books;
 +-------------+------------------+--------------------+------+-----+---------+----------------+---------------------------------+--------------------+
 */
 
+
+/*
+para introducir a la tabla books el campo `copies` despues del campo `sellable`
+*/
 ALTER TABLE books ADD `copies` INTEGER NOT NULL DEFAULT 1 AFTER `sellable`
+/*
++-------------+------------------+------+-----+---------+----------------+
+| Field       | Type             | Null | Key | Default | Extra          |
++-------------+------------------+------+-----+---------+----------------+
+| book_id     | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| author      | int(10) unsigned | YES  |     | NULL    |                |
+| title       | varchar(100)     | NO   |     | NULL    |                |
+| year        | int(10) unsigned | NO   |     | 1900    |                |
+| language    | varchar(2)       | NO   |     | es      |                |
+| cover_url   | varchar(500)     | YES  |     | NULL    |                |
+| price       | double(6,2)      | NO   |     | 10.00   |                |
+| sellable    | tinyint(1)       | YES  |     | 1       |                |
+| copies      | int(11)          | NO   |     | 1       |                |
+| description | text             | YES  |     | NULL    |                |
++-------------+------------------+------+-----+---------+----------------+
+*/
 
 
 CREATE TABLE clients (
