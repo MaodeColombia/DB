@@ -228,10 +228,14 @@ VALUES ('Julio Cortázar','ARG'),
 ('Juan Carlos Onetti','URU');
 
 
+SELECT * FROM authors;
+/* 
+    Este Query muestra todos los registros de authors
+*/
+
 DELETE FROM authors;
 /*
 DELETE
     En este caso se usa para borrar todos los registros de la tabla authors
 */
 
-SELECT * FROM authors;
