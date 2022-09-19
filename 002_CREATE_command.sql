@@ -208,13 +208,19 @@ ENUM
     Código de creación de la tabla y de inserción / modificación:
 */
 
+
+/* Diferentes formas de ingresar registros en una tabla */
+/* Opción 1 */
 INSERT INTO authors (author_id,name,nationality) VALUES ('','Juan Rulfo','MEX');
 
+/* Opción 2 */
 INSERT INTO authors (name,nationality) VALUES ('Gabriel García Márquez','COL');
 
+/* Opción 3 */
 INSERT INTO authors VALUES ('','Juan Gabriel Vásquez','COL')
 
-/*todo en un solo comando*/
+/* Opción 4
+todo en un solo comando*/
 INSERT INTO authors (name,nationality)
 VALUES ('Julio Cortázar','ARG'),
 ('Isabel Allende','CHI'),
