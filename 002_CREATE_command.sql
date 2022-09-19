@@ -147,7 +147,22 @@ DESCRIBE books;
 */
 
 SHOW FULL COLUMNS FROM books;
-
+/*
++-------------+------------------+--------------------+------+-----+---------+----------------+---------------------------------+--------------------+
+| Field       | Type             | Collation          | Null | Key | Default | Extra          | Privileges                      | Comment            |
++-------------+------------------+--------------------+------+-----+---------+----------------+---------------------------------+--------------------+
+| book_id     | int(10) unsigned | NULL               | NO   | PRI | NULL    | auto_increment | select,insert,update,references |                    |
+| author      | int(10) unsigned | NULL               | YES  |     | NULL    |                | select,insert,update,references |                    |
+| title       | varchar(100)     | utf8mb4_general_ci | NO   |     | NULL    |                | select,insert,update,references |                    |
+| year        | int(10) unsigned | NULL               | NO   |     | 1900    |                | select,insert,update,references |                    |
+| language    | varchar(2)       | utf8mb4_general_ci | NO   |     | es      |                | select,insert,update,references | ISO 639-1 Language |
+| cover_url   | varchar(500)     | utf8mb4_general_ci | YES  |     | NULL    |                | select,insert,update,references |                    |
+| price       | double(6,2)      | NULL               | NO   |     | 10.00   |                | select,insert,update,references |                    |
+| sellable    | tinyint(1)       | NULL               | YES  |     | 1       |                | select,insert,update,references |                    |
+| copies      | int(11)          | NULL               | NO   |     | 1       |                | select,insert,update,references |                    |
+| description | text             | utf8mb4_general_ci | YES  |     | NULL    |                | select,insert,update,references |                    |
++-------------+------------------+--------------------+------+-----+---------+----------------+---------------------------------+--------------------+
+*/
 
 ALTER TABLE books ADD `copies` INTEGER NOT NULL DEFAULT 1 AFTER `sellable`
 
