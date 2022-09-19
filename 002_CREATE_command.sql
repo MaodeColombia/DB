@@ -228,5 +228,10 @@ VALUES ('Julio Cortázar','ARG'),
 ('Juan Carlos Onetti','URU');
 
 
-delete from authors;
+DELETE FROM authors;
+/*
+DELETE
+    En este caso se usa para borrar todos los registros de la tabla authors
+*/
+
 SELECT * FROM authors;
