@@ -116,7 +116,36 @@ Proporciona información sobre las columnas de una tabla, DESCRIBE es un sinóni
 https://conclase.net/mysql/curso/sqlsen/DESCRIBE 
 */
 DESCRIBE authors;
+/*
+El comando muestra lo siguiente
++-------------+------------------+------+-----+---------+----------------+
+| Field       | Type             | Null | Key | Default | Extra          |
++-------------+------------------+------+-----+---------+----------------+
+| author_id   | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(100)     | NO   |     | NULL    |                |
+| nationality | varchar(3)       | YES  |     | NULL    |                |
++-------------+------------------+------+-----+---------+----------------+
+*/
+
+
 DESCRIBE books;
+/*
++-------------+------------------+------+-----+---------+----------------+
+| Field       | Type             | Null | Key | Default | Extra          |
++-------------+------------------+------+-----+---------+----------------+
+| book_id     | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| author      | int(10) unsigned | YES  |     | NULL    |                |
+| title       | varchar(100)     | NO   |     | NULL    |                |
+| year        | int(10) unsigned | NO   |     | 1900    |                |
+| language    | varchar(2)       | NO   |     | es      |                |
+| cover_url   | varchar(500)     | YES  |     | NULL    |                |
+| price       | double(6,2)      | NO   |     | 10.00   |                |
+| sellable    | tinyint(1)       | YES  |     | 1       |                |
+| copies      | int(11)          | NO   |     | 1       |                |
+| description | text             | YES  |     | NULL    |                |
++-------------+------------------+------+-----+---------+----------------+
+*/
+
 SHOW FULL COLUMNS FROM books;
 
 
