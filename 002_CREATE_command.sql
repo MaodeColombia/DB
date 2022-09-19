@@ -198,6 +198,16 @@ CREATE TABLE clients (
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+/* 
+ENUM
+    https://blogprog.gonzalolopez.es/articulos/tipo-de-dato-enum-en-mysql.html
+    El tipo de dato enum en mysql representa una enumeración. Puede tener un máximo de 65535 valores distintos y es una cadena cuyo valor se elige de una lista enumerada de valores permitidos que se especifica al definir el campo y puede ser una cadena vacía e incluso null. Dicha lista de valores comienza en 1 no como los arrays en los lenguajes de programación que comienzan en 0.
+
+    Este tipo de dato hay que usarlo cuando en una base de datos se define un tipo, por ejemplo, tenemos un sitio web con diferentes tipos de usuario y va a ser muy limitado pues lo ideal es definir un campo "tipo_usuario" de tipo enum o definir unas categrías en una tienda, etc...
+    El tipo de dato enum en MySQL es más eficiente que el tipo varchar.
+    Código de creación de la tabla y de inserción / modificación:
+*/
+
 INSERT INTO authors (author_id,name,nationality) VALUES ('','Juan Rulfo','MEX');
 
 INSERT INTO authors (name,nationality) VALUES ('Gabriel García Márquez','COL');
